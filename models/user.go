@@ -10,6 +10,7 @@ type Cart struct {
 }
 
 type Product struct {
+	gorm.Model
 	CartID    int
 	ProductID string
 	Name      string
